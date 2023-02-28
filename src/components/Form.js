@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { Store } from '../Store';
 
 export default function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
+  const { state, dispatch: ctxDispatch } = useContext(Store);
+  const { userInfo } = state;
+
   const registerHandler = async (e) => {
     e.preventDefault();
-    alert(name + ' ' + email);
+    localStorage.setItem(
+      'userInfo',
+      JSON.stringify({ name: name, email: email })
+    );
+    ctxDispatch({ type: 'SIGN_IN', payload: { name: name, email: email } });
   };
 
   return (

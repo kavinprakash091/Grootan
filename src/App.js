@@ -1,14 +1,14 @@
-import QRCode from 'qrcode.react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Form from './components/Form';
+import Qrcode from './components/Qrcode';
 function App() {
   return (
-    <div className="App">
-      <div>
-        <QRCode value="#" style={{ marginRight: 50 }} />
-        <p>Tutorialspoint </p>
-      </div>
-      {/* <Form /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Qrcode />} />
+        <Route path="/signin" element={<Form />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
