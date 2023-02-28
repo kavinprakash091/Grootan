@@ -4,8 +4,6 @@ import Form from './components/Form';
 import Qrcode from './components/Qrcode';
 import { useContext } from 'react';
 import { Store } from './Store';
-const { state, dispatch: ctxDispatch } = useContext(Store);
-const { userInfo } = state;
 function App() {
   return (
     <div>
