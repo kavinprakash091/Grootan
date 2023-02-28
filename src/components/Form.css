@@ -1,0 +1,55 @@
+.register-form {
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  margin-top: -15rem;
+  margin-left: 10rem;
+}
+
+.admin-signin {
+  margin-top: -5rem;
+}
+
+.register-form label {
+  font-size: 1.3rem;
+  color: #ffffff;
+  display: flex;
+}
+
+.required-element {
+  color: #ff0000;
+}
+
+.register-form select option {
+  color: #000000;
+}
+
+.input-field-tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields,
+.register-form select {
+  height: 2rem;
+  width: 30rem;
+  margin-bottom: 1rem;
+  padding-left: 1%;
+  font-size: 1rem;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: 1px solid #ffffff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.register-button {
+  padding: 1% 5%;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #0084ff;
+  color: #ffffff;
+}
