@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Qrcode />} />
-        <Route path="/signin" element={<Form />} />
+        <Route path="https://grootan1.onrender.com" element={<Qrcode />} />
+        <Route path="https://grootan1.onrender.com/signin" element={<Form />} />
       </Routes>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Qrcode() {
   return (
     <div>
       <QRCode
-        value="https://grootan1.onrender.com/signin"
+        value="https://grootan1.onrender.com"
         style={{ marginRight: 50 }}
       />{' '}
       <p> Grootan </p> {userInfo && <div> {userInfo} </div>}{' '}
